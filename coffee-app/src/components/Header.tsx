@@ -1,16 +1,11 @@
 import React from 'react'
-import { Flex, Heading, HStack, Link,useColorMode, Button, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Heading, HStack, Link} from "@chakra-ui/react";
 
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 const Header = () => {
-  
-  const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("gray.300", "#4D8AAE")
-  const color = useColorModeValue("gray.900","#EFBB1A")
+
   return (
     <Flex
-    bg={bg} 
-    color={color}
+    bg="#4D8AAE"
       px="200px"
       py="20px"
       width="full"
@@ -19,8 +14,8 @@ const Header = () => {
     >
       <Flex alignItems="flex-end">
         <Heading
-        bg={bg} 
-        color={color}
+        
+        color="#EFBB1A"
           mr="60px"
           fontSize={20}
           letterSpacing="1.5px"
@@ -30,7 +25,7 @@ const Header = () => {
     transitionTimingFunction: "ease-in-out"}}>LOGO</Link>
         </Heading>
         
-        <HStack bg={bg} 
+        <HStack
     color="#2D2D2D" spacing="40px">
           <Link href='/' _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
     transitionTimingFunction: "ease-in-out"}}>Home</Link>
@@ -46,9 +41,6 @@ const Header = () => {
     transitionTimingFunction: "ease-in-out" }}>FAQ</Link>
         </HStack>
       </Flex>
-      <Button onClick={toggleColorMode } >
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
     </Flex>
   )
 }
