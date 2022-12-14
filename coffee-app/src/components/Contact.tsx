@@ -1,11 +1,11 @@
 import React from 'react'
-import { Box, Heading, Text,HStack } from "@chakra-ui/react";
+import { Box, Heading, Text,HStack,Link } from "@chakra-ui/react";
 import { PhoneIcon} from '@chakra-ui/icons'
 
 // The defau
 const Contacts = () => {
   return (
-    <HStack bg="#4D8AAE"><Box w="full" px="200px" py="60px" bg="#4D8AAE" pr="20px">
+    <HStack bg="#4D8AAE"><Box w="full" px="200px" py="60px" bg="#4D8AAE" pr="20px" pt="25px">
           <Heading fontSize="24px" color="#EFBB1A" pb="20px" display="flex" justifyContent="center">
               LOGO
           </Heading>
@@ -26,9 +26,10 @@ const Contacts = () => {
           </Text>
           <HStack display="flex" justifyContent="center">
               <PhoneIcon color="#2D2D2D" />
-              <Text color="white" fontSize="14px">
+              <Link color="white" fontSize="14px"  _hover={{ color: "#2D2D2D" ,transitionDuration: '0.2s',
+    transitionTimingFunction: "ease-in-out"}}>
                   0909312893
-              </Text>
+              </Link>
           </HStack>
       </Box>
       <Box w="full" px="200px" py="60px" bg="#4D8AAE" pl="20px">
@@ -61,9 +62,10 @@ const Contacts = () => {
                   Rezervácie na
               </Text>
                   <PhoneIcon color="#2D2D2D" />
-                  <Text color="white" fontSize="14px">
+                  <Link color="white" fontSize="14px"  _hover={{ color: "#2D2D2D" ,transitionDuration: '0.2s',
+    transitionTimingFunction: "ease-in-out"}}>
                       0909312893
-                  </Text>
+                  </Link>
               </HStack>
           </Box></HStack>
   )

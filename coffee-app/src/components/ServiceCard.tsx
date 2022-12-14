@@ -34,7 +34,8 @@ const ServiceCard = ({icon,
         </Heading>
         <Text color="blue.700">{description}</Text>
       </Box>
-      <Link color="blue.800">
+      <Link color="blue.800" _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
+    transitionTimingFunction: "ease-in-out"}}>
         Explore more
         <Icon as={FiArrowUpRight} ml="10px" h={5} w={5} />
       </Link>

@@ -26,7 +26,8 @@ const Intro = () => {
             nulla exercitation Lorem duis. Nostrud id duis deserunt nostrud
             commodo quis. Ipsum dolore dolore ut esse reprehenderit.
           </Text>
-          <Link color="whiteAlpha.800">
+          <Link color="whiteAlpha.800" _hover={{ color: "#2D2D2D" ,transitionDuration: '0.2s',
+    transitionTimingFunction: "ease-in-out"}}>
             Explore more
             <Icon as={FiArrowUpRight} ml="10px" h={5} w={5} />
           </Link>
