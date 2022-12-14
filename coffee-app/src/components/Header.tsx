@@ -40,6 +40,8 @@ const Header = () => {
     transitionTimingFunction: "ease-in-out" }}>About us</Link>
     <Link href='/offer' _hover={{ color: "#EFBB1A",transitionDuration: '0.2s',
     transitionTimingFunction: "ease-in-out" }}>We Offer</Link>
+    <Link href='/contact' _hover={{ color: "#EFBB1A",transitionDuration: '0.2s',
+    transitionTimingFunction: "ease-in-out" }}>Contact</Link>
         </HStack>
       </Flex>
       <Button onClick={toggleColorMode } >

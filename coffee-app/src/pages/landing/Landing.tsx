@@ -5,7 +5,6 @@ import Services from './sections/Services';
 import Commitments from './sections/Commitments';
 import HowTo from './sections/HowTo';
 import Testimonials from './sections/Testimonials';
-import GoogleMaps from '../../components/GoogleMaps';
 
   
 
@@ -17,7 +16,6 @@ const Landing = () => {
         <Commitments/>
         <HowTo/>
         <Testimonials/>
-        <GoogleMaps/>
     </Box>
   )
 }

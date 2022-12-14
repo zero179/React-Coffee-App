@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom"
 import HowTo from "./pages/landing/sections/HowTo"
 import Services from "./pages/landing/sections/Services"
 import Testimonials from "./pages/landing/sections/Testimonials"
+import ContactUs from "./pages/landing/sections/ContactUs"
 
 const theme  = extendTheme({
   fonts: {
@@ -26,6 +27,7 @@ export const App = () => (
     <Route path="/about" element={<HowTo/>}/>
     <Route path="/service" element={<Services/>}/>
     <Route path="/offer" element={<Testimonials/>}/>
+    <Route path="/contact" element={<ContactUs/>}/>
     </Routes>
     <Footer/>
   </ChakraProvider>
