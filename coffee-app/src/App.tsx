@@ -11,6 +11,7 @@ import HowTo from "./pages/landing/sections/HowTo"
 import Services from "./pages/landing/sections/Services"
 import Testimonials from "./pages/landing/sections/Testimonials"
 import ContactUs from "./pages/landing/sections/ContactUs"
+import QuestionTab from "./components/QuestionTab"
 
 const theme  = extendTheme({
   fonts: {
@@ -28,6 +29,7 @@ export const App = () => (
     <Route path="/service" element={<Services/>}/>
     <Route path="/offer" element={<Testimonials/>}/>
     <Route path="/contact" element={<ContactUs/>}/>
+    <Route path="/faq" element={<QuestionTab/>}/>
     </Routes>
     <Footer/>
   </ChakraProvider>
