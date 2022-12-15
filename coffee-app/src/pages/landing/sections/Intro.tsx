@@ -14,7 +14,7 @@ import {
 
 const Intro = () => {
   return (
-    <Box w="full" bg="#4D8AAE" px="200px" py="60px" mb="120px">
+    <Box w="full"  bg="#4D8AAE" px="200px" py="60px">
       <Flex justifyContent="space-between" alignItems="center" pb="80px">
         <Heading fontSize={54} letterSpacing="6px" color="whiteAlpha.900">
           People who care <br /> about your growth
@@ -33,7 +33,7 @@ const Intro = () => {
           </Link>
         </Box>
       </Flex>
-      <AspectRatio w="full" ratio={16 / 9} mb="-200px">
+      <AspectRatio w="full" ratio={16 / 9} >
         <Img src={group16x9}  pb="60px" />
       </AspectRatio>
     </Box>

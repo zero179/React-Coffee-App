@@ -35,6 +35,7 @@ const Footer = () => {
       </Stack>
       <Text color="white"
             display="flex"
+            fontWeight="normal"
           letterSpacing="1.5px">
         &copy; {new Date().getFullYear()} Chakra UI Pro, Inc. All rights reserved.
       </Text>

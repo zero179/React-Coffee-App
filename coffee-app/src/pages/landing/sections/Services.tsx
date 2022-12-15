@@ -6,7 +6,7 @@ import { BsPencilSquare } from "react-icons/bs";
 
 const Services = () => {
   return (
-    <Box w="full" py="60px" px="200px">
+    <Box w="full" py="60px" px="200px" bg="blue.900">
       <Flex justifyContent="space-between" alignItems="center" pb="60px">
         <Heading fontSize={42} letterSpacing="4px" color="#EFBB1A">
           What we can <br /> provide you

@@ -1,8 +1,8 @@
-import * as React from "react"
+import * as React from 'react'
 import {
   ChakraProvider,
-  extendTheme
-} from "@chakra-ui/react"
+  extendTheme,
+} from "@chakra-ui/react";
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Landing from "./pages/landing/Landing"
@@ -13,6 +13,7 @@ import Testimonials from "./pages/landing/sections/Testimonials"
 import ContactUs from "./pages/landing/sections/ContactUs"
 import QuestionTab from "./components/QuestionTab"
 
+
 const theme  = extendTheme({
   fonts: {
     heading: `'Open Sans', sans-serif`,
@@ -20,9 +21,12 @@ const theme  = extendTheme({
   }
 })
 
-export const App = () => (
+export const App = () =>{
+
+  return(
   <ChakraProvider theme={theme}>
-    <Header/>
+    <Header
+    />
     <Routes>
     <Route path="/" element={<Landing/>}/>
     <Route path="/about" element={<HowTo/>}/>
@@ -34,3 +38,4 @@ export const App = () => (
     <Footer/>
   </ChakraProvider>
 )
+}

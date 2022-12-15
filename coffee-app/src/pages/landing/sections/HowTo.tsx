@@ -7,7 +7,7 @@ import WomanAtBoard from "../../../assets/coffee.png";
 
 const HowTo = () => {
   return (
-    <Box w="full" px="200px" py="60px">
+    <Box w="full" px="200px" py="60px"  bg="blue.900">
       <Heading fontSize={42} letterSpacing="4px" color="#EFBB1A" pb="80px">
         How do we work?
       </Heading>
