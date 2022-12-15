@@ -1,17 +1,18 @@
 import { Box, Heading, HStack } from "@chakra-ui/react";
 import React from "react";
 import WorkMethodCard from "../../../components/WorkMethodCard";
-import ManOnPhone from "../../../assets/coffee.png";
+import ManOnPhone from "../../../assets/dream.png";
 import ManOnLaptop from "../../../assets/coffee.png";
-import WomanAtBoard from "../../../assets/coffee.png";
+import WomanAtBoard from "../../../assets/kava.png";
 
 const HowTo = () => {
   return (
+    <div id="about">
     <Box w="full" px="200px" py="60px"  bg="blue.900">
       <Heading fontSize={42} letterSpacing="4px" color="#EFBB1A" pb="80px">
         How do we work?
       </Heading>
-      <HStack w="full" alignItems="flex-start" spacing="75px" >
+      <HStack w="full" alignItems="flex-start" spacing="75px">
         <WorkMethodCard
           imagePath={ManOnPhone}
           heading="User centered design"
@@ -30,6 +31,7 @@ const HowTo = () => {
         />
       </HStack>
     </Box>
+    </div>
   )
 }
 

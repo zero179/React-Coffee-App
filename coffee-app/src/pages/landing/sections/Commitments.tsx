@@ -5,6 +5,7 @@ import PairProgramming from "../../../assets/coffee.png";
 
 const Commitments = () => {
   return (
+    <div id="commit">
     <Flex
       pl="200px"
       background="#4D8AAE"
@@ -31,6 +32,7 @@ const Commitments = () => {
         <Img src={PairProgramming}  />
       </AspectRatio>
     </Flex>
+    </div>
   )
 }
 

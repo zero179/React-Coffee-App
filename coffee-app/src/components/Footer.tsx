@@ -20,14 +20,21 @@ const Footer = () => {
         <ButtonGroup variant="ghost">
           <IconButton
             as="a"
+            color="white"
             href="#"
+            _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
+              transitionTimingFunction: "ease-in-out"}}
             aria-label="LinkedIn"
             icon={<FaLinkedin fontSize="1.25rem" />}
           />
-          <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
+          <IconButton color="white" as="a" href="#" _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
+              transitionTimingFunction: "ease-in-out"}} aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
           <IconButton
+          color="white"
             as="a"
             href="#"
+            _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
+              transitionTimingFunction: "ease-in-out"}}
             aria-label="Twitter"
             icon={<FaTwitter fontSize="1.25rem" />}
           />

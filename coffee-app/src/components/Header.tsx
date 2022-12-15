@@ -2,10 +2,11 @@
 import {useState} from 'react'
 import { Flex, Heading, HStack,IconButton, Button} from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon} from "@chakra-ui/icons";
-import NextLink from 'next/link'
+import Link from 'next/link'
 const Header = () => {
   const [display, changeDisplay]=useState('none')
   return (
+    
     <Flex>
       <Flex
         bg="#4D8AAE"
@@ -25,102 +26,95 @@ const Header = () => {
           letterSpacing="1.5px"
           as='b'
         >
-          <NextLink href='/'  passHref >
+          <Link href='/'  passHref>
             <Button
               _hover={{ color: "#2D2D2D" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Logo"
-              my={5}
               as="a"
               w="100%"
               fontSize="3xl"
             >
               LOGO
             </Button>
-          </NextLink>
+          </Link>
         </Heading>
         
         <HStack
           color="#2D2D2D" spacing="35px">
-          <NextLink href="/" passHref >
+          <Link href="/" passHref scroll={false}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Home"
-              my={5}
               w="100%"
             >
               Home
             </Button>
-          </NextLink>
-          <NextLink href='/service' passHref >
+          </Link>
+          <Link href='#service' passHref scroll={true}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Service"
-              my={5}
               w="100%"
             >
               Service
             </Button>
-          </NextLink>
-          <NextLink href='/about' passHref >
+          </Link>
+          <Link href='#about' passHref scroll={true}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="About"
-              my={5}
               w="100%"
             >
               About Us
             </Button>
-          </NextLink>
-          <NextLink href='/offer' passHref >
+          </Link>
+          <Link href='#offer' passHref scroll={true}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Offer"
-              my={5}
               w="100%"
             >
               Offer
             </Button>
-          </NextLink>
-          <NextLink href='/contact' passHref>
+          </Link>
+          <Link href='/contact' passHref scroll={true}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Contact"
-              my={5}
               w="100%"
             >
               Contact
             </Button>
-          </NextLink>
-          <NextLink href='/faq' passHref >
+          </Link>
+          <Link href='/faq' passHref scroll={true}>
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Faq"
-              my={5}
               w="100%"
             >
               FAQ
             </Button>
-          </NextLink>
+          </Link>
         </HStack>
       </Flex>
     </Flex>
@@ -167,7 +161,6 @@ const Header = () => {
           />
         </Flex>
       <Flex
-        h="100vh"
         flexDir="column"
         align="center"
         justify="center"
@@ -179,98 +172,91 @@ const Header = () => {
           letterSpacing="1.5px"
           as='b'
         >
-          <NextLink href='/'  passHref >
+          <Link href='/'  passHref >
             <Button
               as="a"
               _hover={{ color: "#2D2D2D" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Logo"
-              my={5}
               w="100%"
             >
               LOGO
             </Button>
-          </NextLink>
+          </Link>
         </Heading>
-          <NextLink href="/" passHref color="#2D2D2D" >
+          <Link href="/" passHref color="#2D2D2D" >
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Contact"
-              my={5}
               w="100%"
             >
               Home
             </Button>
-          </NextLink>
-          <NextLink href='/service' passHref color="#2D2D2D">
+          </Link>
+          <Link href='/service' passHref color="#2D2D2D">
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="Service"
-              my={5}
               w="100%"
             >
               Service
             </Button>
-          </NextLink>
-          <NextLink href='/about' passHref color="#2D2D2D">
+          </Link>
+          <Link href='/about' passHref color="#2D2D2D">
             <Button
               as="a"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               variant="ghost"
               aria-label="About"
-              my={5}
               w="100%"
             >
               About
             </Button>
-          </NextLink>
-          <NextLink href='/offer' passHref color="#2D2D2D">
+          </Link>
+          <Link href='/offer' passHref color="#2D2D2D">
             <Button
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
               as="a"
               variant="ghost"
               aria-label="Offer"
-              my={5}
               w="100%"
             >
               Offer
             </Button>
-          </NextLink>
-          <NextLink href='/contact' passHref color="#2D2D2D">
+          </Link>
+          <Link href='/contact' passHref color="#2D2D2D">
             <Button
               as="a"
               variant="ghost"
               aria-label="Contact"
-              my={5}
               w="100%"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
             >
               Contact
             </Button>
-          </NextLink>
-          <NextLink href='/faq' passHref color="#2D2D2D">
+          </Link>
+          <Link href='/faq' passHref color="#2D2D2D">
             <Button
               as="a"
               variant="ghost"
               aria-label="Faq"
-              my={5}
               w="100%"
               _hover={{ color: "#EFBB1A" ,transitionDuration: '0.2s',
               transitionTimingFunction: "ease-in-out"}}
             >
               FAQ
             </Button>
-          </NextLink>
+          </Link>
       </Flex>
       </Flex>
     </Flex>
